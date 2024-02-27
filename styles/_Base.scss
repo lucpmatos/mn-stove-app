@@ -1,0 +1,110 @@
+// ---------- Fonts ----------
+// - Roboto
+// - Google Icons
+//
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+@import './_Colors.scss';
+
+body{
+	transition: all ease 300ms;
+	
+	.globalWrapper{
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: relative;
+		min-height: 100vh;
+		overflow: hidden;
+		background-color: rgb(240, 240, 240);
+		
+		.innerWrapper{
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: relative;
+			padding-left:80px;
+			padding-top: 62px;
+			transition: all ease 600ms;
+			min-height: calc(100vh);
+		}
+	}
+	
+}
+
+// ---------- Utils ----------
+//
+.w-100{
+	width: 100% !important;
+}
+.float-left{
+	float: left !important;
+}
+.float-right{
+	float: right !important;
+}
+.dspNone{
+	display: none !important;
+}
+.dspBlock{
+	display: block !important;
+}
+.isValidating{
+	opacity: 0.3;
+}
+.material-icons-outlined{
+	font-size: inherit;
+}
+.pageIcon{
+	font-size: 32px !important;
+}
+img{
+	width: 100%;
+}
+.green{
+	color:#009B62FF !important;
+}
+.primary{
+	color:#4086F4FF !important;
+}
+.textAlignCenter{
+	text-align: center !important;
+}
+.textAlignLeft{
+	text-align: left !important;
+}
+.textAlignRight{
+	text-align: right !important;
+}
+.boxShadowNone{
+	box-shadow: none !important;
+}
+.pointerEventsNone{
+	opacity: 0.7 !important;
+	pointer-events: none !important;
+}
+
+// ----- Font Colors -----
+//
+.color_salmon{ color: $color_salmon !important; }
+.color_primary{ color: $color_primary !important; }
+.color_secondary{ color: $color_secondary !important; }
+.color_terciary{ color: $color_terciary !important; }
+.color_success{ color: $color_success !important; }
+.color_danger{ color: $color_danger !important; }
+.color_warning{ color: $color_warning !important; }
+.color_info{ color: $color_info !important; }
+.color_light{ color: $color_light !important; }
+.color_dark{ color: $color_dark !important; }
+.color_gray{ color: $color_gray !important; }
+.color_lightgray{ color: $color_lightgray !important; }
+.color_white{ color: $color_white !important; }
+.color_black{ color: $color_black !important; }
+
+.background_danger{ background-color: #f8d7da !important; color: #842029 !important; }
+.background_primary{ background-color: #cfe2ff !important; color: #084298 !important; }
+
+// ----- Components -----
+//
+@import "components/Stove/Stove";
