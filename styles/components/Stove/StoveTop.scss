@@ -1,0 +1,71 @@
+@import "../../Colors";
+
+.stove{
+	
+	.stoveTop{
+		width: 100%;
+		float: left;
+		background: rgb(20,20,20);
+		background: -moz-linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(61,61,61,1) 100%);
+		background: -webkit-linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(61,61,61,1) 100%);
+		background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(61,61,61,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141414",endColorstr="#3d3d3d",GradientType=1);
+		
+		.burner{
+			width: 80px;
+			height: 30px;
+			margin: 15px auto;
+			display: block;
+			border: 1px solid #666;
+			border-radius: 50%;
+			background-color: transparent;
+			transition: all ease 4s;
+			
+			&.burning {
+				transition: all ease 2s;
+				background-color: $color_danger;
+				box-shadow: 0 0 20px 5px rgba(255,0,0,0.5);
+			}
+		}
+	}
+	
+	.stoveTopButtons{
+		width: 100%;
+		float: left;
+		margin-top: 15px;
+		padding: 0 10px;
+		
+		.burnerButton{
+			width: 30px;
+			height: 30px;
+			display: block;
+			margin: 0 auto;
+			border-radius: 50%;
+			border: 2px solid $color_lightgray;
+			background-color: $color_black;
+			position: relative;
+			box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+			transition: all ease 0.3s;
+			
+			&.active{
+				transform: rotate(290deg);
+			}
+			
+			&:after{
+				content:'';
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background-color: $color_lightgray;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -3px;
+			}
+			
+			&:hover{
+				box-shadow: 0 0 10px 3px $color_primary;
+			}
+		}
+	}
+}
