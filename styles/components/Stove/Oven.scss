@@ -1,0 +1,35 @@
+@import "../../Colors";
+
+.stove{
+	.oven{
+		width: 100%;
+		display: block;
+		float: left;
+		padding: 30px;
+		margin-top: 15px;
+		position: relative;
+		background: rgb(28,28,28);
+		background: -moz-linear-gradient(120deg, rgba(28,28,28,1) 0%, rgba(101,101,101,1) 100%);
+		background: -webkit-linear-gradient(120deg, rgba(28,28,28,1) 0%, rgba(101,101,101,1) 100%);
+		background: linear-gradient(120deg, rgba(28,28,28,1) 0%, rgba(101,101,101,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c1c1c",endColorstr="#656565",GradientType=1);
+		
+		.lampButton{
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			position: absolute;
+			top: 7px;
+			right: 47px;
+			background-color: $color_danger;
+		}
+		
+		.brandName{
+			color: $color_lightgray;
+			opacity: 0.5;
+			position: absolute;
+			top: 35px;
+			left: 40px;
+		}
+	}
+}
